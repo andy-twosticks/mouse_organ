@@ -1,0 +1,4 @@
+--color
+--require spec_helper
+--require doc_no_pending
+-I .
