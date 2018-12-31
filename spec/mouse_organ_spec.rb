@@ -91,7 +91,7 @@ RSpec.describe "MouseOrgan" do
       organ3.go
     end
 
-    it "transits through the given states and stops when machine_stop? is true" do
+    it "transits through the given states and stops when #machine_stop? is true" do
       expect( organ4 ).to receive(:transition_to).with(:one).and_call_original.ordered
       expect( organ4 ).to receive(:transition_to).with(:two).and_call_original.ordered
       expect( organ4 ).to receive(:transition_to).with(:three).and_call_original.ordered

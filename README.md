@@ -9,10 +9,12 @@ This is a _very_ small mixin that turns a class into a basic state machine.
 Installation
 ------------
 
-Just download lib/mouse_organ.rb into your code.  I mean, it _could_ be a gem.  Sure.  But at less
-than 40 lines, that seems more like an abuse of RubyGems than a use.
+Just download lib/mouse_organ.rb into your code.  Or you could just use it as a pattern of sorts,
+and roll your own in the same vein.
 
-Or just use it as a pattern of sorts, and roll your own in the same vein.
+I mean, sure, you can also `gem install mouse_organ`.  But honestly, it might be better to have the
+class where you can see it, for documentation purposes?  Your call.
+
 
 
 Example
