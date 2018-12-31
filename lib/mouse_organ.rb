@@ -1,6 +1,3 @@
-
-
-
 ##
 # A tiny mixin to turn a class into a state machine.
 # Example:
@@ -41,7 +38,7 @@ module MouseOrgan
 
     catch :machine_stop do
       loop do
-        send state_method(state)
+        send state_method(@state)
         throw :machine_stop if machine_stop?
       end
     end
@@ -66,7 +63,7 @@ module MouseOrgan
   private
 
   def state_method(state)
-    "state_#@state".to_sym
+    "state_#{state}".to_sym
   end
 
 end # of MouseOrgan
